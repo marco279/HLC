@@ -21,3 +21,7 @@ services:
       - "${PORT_ORIGEN}:80"
     volumes:
       - ./logs:/root/logs
+    networks:
+      netcaronte:
+        ipv4_address: 172.120.10.2
+        
