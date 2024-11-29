@@ -1,0 +1,5 @@
+ARG AUTOR
+FROM ${AUTOR}/ubuntubase
+
+ARG AUTOR
+ENV USUARIO="pepe"

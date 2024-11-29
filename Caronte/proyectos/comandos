@@ -1,5 +1,5 @@
 
-docker build -t marco/miubuntu -f Dockerfile1 .  
+docker build -t marco/miubuntu -f Dockerfile .
 docker run -v ./datos:/root/datos --name miservidor -e USUARIO=esther -e PASSWORD=esther morgadoberruezo/miubuntu 
 
 

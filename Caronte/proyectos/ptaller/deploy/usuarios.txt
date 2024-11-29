@@ -1,0 +1,4 @@
+juan:pswjuan
+mario:pswmario
+pedro:pswpedro
+patricio:pswpatricio

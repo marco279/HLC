@@ -4,9 +4,20 @@ services:
     build:
       context: ${CONTEXTO}
       dockerfile: ./dockerfiles/ubuntu/Dockerfile
-    container_name: ${NAME_CT}
+      args:
+        - CONTEXTO=${CONTEXTO}
+        - TZ=${TZ}
+        - PROYECTO=${PROYECTO}
+        - AUTOR=${AUTOR}
+    image: ${AUTOR}/nginx
+    container_name: nginx1
+    hostname: ${HOSTNAME}
+    env_file:
+      - ./.env
     environment:
       - USUARIO=${USUARIO}
       - PASSWORD=${PASSWD}
+    ports:
+      - "${PORT_ORIGEN}:80"
     volumes:
       - ./logs:/root/logs
