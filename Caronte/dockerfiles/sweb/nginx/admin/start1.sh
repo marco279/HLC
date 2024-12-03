@@ -7,5 +7,7 @@ main (){
 
     #nginx  -g 'daemon off;'
     nginx
-    tall -f /dev/null/
+    tall -f /devnull
 }
+
+main
